@@ -170,7 +170,7 @@
     <script src="{{ asset('admin/js/custom.min.js') }}"></script>
     <script src="{{ asset('admin/js/dashboard1.js') }}"></script>
     <script src="{{ asset('admin/plugins/bower_components/toast-master/js/jquery.toast.js') }}"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.22/datatables.min.js></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.22/datatables.min.js"></script>
 
     @stack('scripts')
     <script>
