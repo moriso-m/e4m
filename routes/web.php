@@ -53,7 +53,7 @@ Route::group(['prefix' => 'shop',], function () {
 
 });
 
-Route::group(['prefix' => 'admin','middleware' => 'auth'], function () {
+Route::group(['prefix' => 'root','middleware' => 'auth'], function () {
 
     Route::get('/home', [
         'uses' => 'AdminController@admin_home',
