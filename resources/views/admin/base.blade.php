@@ -8,29 +8,29 @@
       <title>E4M</title>
 
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="/admin/plugins/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('admin/plugins/images/favicon.png">
     <!-- Bootstrap Core CSS -->
-    <link href="/admin/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ asset('admin/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Menu CSS -->
-    <link href="/admin/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <link href="{{ asset('admin/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css') }}" rel="stylesheet">
     <!-- toast CSS -->
-    <link href="/admin/plugins/bower_components/toast-master/css/jquery.toast.css" rel="stylesheet">
+    <link href="{{ asset('admin/plugins/bower_components/toast-master/css/jquery.toast.css') }}" rel="stylesheet">
     <!-- morris CSS -->
-    <link href="/admin/plugins/bower_components/morrisjs/morris.css" rel="stylesheet">
+    <link href="{{ asset('admin/plugins/bower_components/morrisjs/morris.css') }}" rel="stylesheet">
     <!-- chartist CSS -->
-    <link href="/admin/plugins/bower_components/chartist-js/dist/chartist.min.css" rel="stylesheet">
-    <link href="/admin/plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <link href="{{ asset('admin/plugins/bower_components/chartist-js/dist/chartist.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('admin/plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css') }}" rel="stylesheet">
     <!-- animation CSS -->
-    <link href="/admin/css/animate.css" rel="stylesheet">
+    <link href="{{ asset('admin/css/animate.css') }}" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="/admin/css/style.css" rel="stylesheet">
+    <link href="{{ asset('admin/css/style.css') }}" rel="stylesheet">
     <!-- color CSS -->
-    <link href="/admin/css/colors/default.css" id="theme" rel="stylesheet">
+    <link href="{{ asset('admin/css/colors/default.css') }}" id="theme" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js></script>
 <![endif]-->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.22/datatables.min.css"/>
 </head>
@@ -59,16 +59,16 @@
                         <!-- Logo icon image, you can use font-icon also -->
                         <b>
                             <!--This is dark logo icon-->
-                            <img src="/admin/plugins/images/admin-logo.png" alt="home" class="dark-logo" />
+                            <img src="{{ asset('admin/plugins/images/admin-logo.png" alt="home" class="dark-logo" />
                             <!--This is light logo icon-->
-                            <img src="/admin/plugins/images/admin-logo-dark.png" alt="home" class="light-logo" />
+                            <img src="{{ asset('admin/plugins/images/admin-logo-dark.png" alt="home" class="light-logo" />
                         </b>
                         <!-- Logo text image you can use text also -->
                         <span class="hidden-xs">
                             <!--This is dark logo text-->
-                            <img src="/admin/plugins/images/admin-text.png" alt="home" class="dark-logo" />
+                            <img src="{{ asset('admin/plugins/images/admin-text.png" alt="home" class="dark-logo" />
                             <!--This is light logo text-->
-                            <img src="/admin/plugins/images/admin-text-dark.png" alt="home" class="light-logo" />
+                            <img src="{{ asset('admin/plugins/images/admin-text-dark.png" alt="home" class="light-logo" />
                         </span> 
                     </a>
                 </div>
@@ -86,7 +86,7 @@
                         </form>
                     </li>
                     <li>
-                        <a class="profile-pic" href="#"> <img src="/admin/plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">{{ Auth::user()->name }}</b></a>
+                        <a class="profile-pic" href="#"> <img src="{{ asset('admin/plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">{{ Auth::user()->name }}</b></a>
                     </li>
                 </ul>
             </div>
@@ -149,28 +149,28 @@
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
-    <script src="/admin/plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="{{ asset('admin/plugins/bower_components/jquery/dist/jquery.min.js') }}></script>
     <!-- Bootstrap Core JavaScript -->
-    <script src="/admin/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="{{ asset('admin/bootstrap/dist/js/bootstrap.min.js') }}></script>
     <!-- Menu Plugin JavaScript -->
-    <script src="/admin/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <script src="{{ asset('admin/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js') }}></script>
     <!--slimscroll JavaScript -->
-    <script src="/admin/js/jquery.slimscroll.js"></script>
+    <script src="{{ asset('admin/js/jquery.slimscroll.js') }}></script>
     <!--Wave Effects -->
-    <script src="/admin/js/waves.js"></script>
+    <script src="{{ asset('admin/js/waves.js') }}></script>
     <!--Counter js -->
-    <script src="/admin/plugins/bower_components/waypoints/lib/jquery.waypoints.js"></script>
-    <script src="/admin/plugins/bower_components/counterup/jquery.counterup.min.js"></script>
+    <script src="{{ asset('admin/plugins/bower_components/waypoints/lib/jquery.waypoints.js') }}></script>
+    <script src="{{ asset('admin/plugins/bower_components/counterup/jquery.counterup.min.js') }}></script>
     <!-- chartist chart -->
-    <script src="/admin/plugins/bower_components/chartist-js/dist/chartist.min.js"></script>
-    <script src="/admin/plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="{{ asset('admin/plugins/bower_components/chartist-js/dist/chartist.min.js') }}></script>
+    <script src="{{ asset('admin/plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js') }}></script>
     <!-- Sparkline chart JavaScript -->
-    <script src="/admin/plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <script src="{{ asset('admin/plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js') }}></script>
     <!-- Custom Theme JavaScript -->
-    <script src="/admin/js/custom.min.js"></script>
-    <script src="/admin/js/dashboard1.js"></script>
-    <script src="/admin/plugins/bower_components/toast-master/js/jquery.toast.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.22/datatables.min.js"></script>
+    <script src="{{ asset('admin/js/custom.min.js') }}></script>
+    <script src="{{ asset('admin/js/dashboard1.js') }}></script>
+    <script src="{{ asset('admin/plugins/bower_components/toast-master/js/jquery.toast.js') }}></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.22/datatables.min.js></script>
 
     @stack('scripts')
     <script>
