@@ -4,7 +4,7 @@
 /storage/*.key
 /storage/framework
 /vendor
-.env
+# .env
 .env.backup
 .editorconfig
 
