@@ -1,205 +1,315 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-  <head>
-    <title>E4M</title>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home | E4M</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/prettyPhoto.css" rel="stylesheet">
+    <link href="/css/price-range.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
+	<link href="/css/main.css" rel="stylesheet">
+	<link href="/css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="/images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
 
-    <!-- Meta -->
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="keywords" content="Bootstrap Theme, Freebies, UI Kit, MIT license">
-    <meta name="description" content="Bootstrap 4 Template by WebThemez">
-    <meta name="author" content="webthemez.com">
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-    <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('vendors/bootstrap/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('vendors/font-awesome/css/fontawesome-all.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('vendors/slick-carousel/slick.css') }}">
-	<link href="{{ asset('vendors/ace-responsive-menu/ace-responsive-menu.css') }}" rel="stylesheet" type="text/css" />
-	<link href="{{ asset('vendors/aos/aos.css') }}" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/theme.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/styles.css') }}">
-	@yield('css')	
-  </head>
-  <body>
-  <div class="hidden-xs hidden-sm nav-top bg-primary py-2">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="nav-top-contact">
-                <!-- Social links -->
-                <ul class="list-inline text-center text-md-left mb-0">
-                  <li class="list-inline-item mx-2" ><i class="fa fa-phone"></i> +2547-92-938-363</li>
-                  <li class="list-inline-item mx-2" ><i class="fa fa-envelope" aria-hidden="true"></i> info@e4missions.com</li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-6 text-right">
-                 <ul class="list-inline text-center text-md-right mb-0">
-				  <li class="list-inline-item mx-2" data-toggle="tooltip" data-placement="top" title="Facebook">
-					<a target="_blank" href="https://www.facebook.com/webthemez">
-					  <i class="fab fa-facebook"></i>
-					</a>
-				  </li>
-				  <li class="list-inline-item mx-2" data-toggle="tooltip" data-placement="top" title="Instagram">
-					<a target="_blank" href="https://www.instagram.com">
-					  <i class="fab fa-instagram"></i>
-					</a>
-				  </li>
-				  <li class="list-inline-item mx-2" data-toggle="tooltip" data-placement="top" title="Twitter">
-					<a target="_blank" href="https://twitter.com/webthemez">
-					  <i class="fab fa-twitter"></i>
-					</a>
-				  </li>
-				  <li class="list-inline-item mx-2" data-toggle="tooltip" data-placement="top" title="Dribbble">
-					<a target="_blank" href="https://dribbble.com">
-					  <i class="fab fa-dribbble"></i>
-					</a>
-				  </li>
-				</ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    <!-- Header -->
-    <header class="main-header">
-	<div class="container">
-			<div class="logo">
-					<a href="/">
-						 <h2>
-							 <span>E4Mission</span>
-							classic suppliers</h2>
-					  </a>
+<body>
+	<header id="header"><!--header-->
+		<div class="header_top"><!--header_top-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="contactinfo">
+							<ul class="nav nav-pills">
+								<li><a href="#"><i class="fa fa-phone"></i> 0208000774</a></li>
+								<li><a href="#"><i class="fa fa-envelope"></i> info@e4missionsclassicsuppliers.co.ke</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="social-icons pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
-			 <!-- Navbar -->
-				<nav class="mainNav">
-				<!-- Menu Toggle btn-->
-				<div class="menu-toggle">
-					<h3>Menu</h3>
-					<button type="button" id="menu-btn">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
+			</div>
+		</div><!--/header_top-->
+		
+		<div class="header-middle"><!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 clearfix">
+						<div class="logo pull-left">
+							<a href="/"><img src="/images/home/logo.png" alt="" /></a>
+						</div>
+						<div class="btn-group pull-right clearfix">
+							<div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+									KENYA
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="">KENYA</a></li>
+									{{-- <li><a href="">USA</a></li> --}}
+								</ul>
+							</div>
+							
+							<div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+									SHILLING
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="">SHILLING</a></li>
+									{{-- <li><a href="">USD</a></li> --}}
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-7 clearfix">
+						<div class="shop-menu clearfix pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href=""><i class="fa fa-user"></i> Account</a></li>
+								{{-- <li><a href=""><i class="fa fa-star"></i> Wishlist</a></li>
+								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
+								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li> --}}
+								<li><a href="{{ route('login') }}"><i class="fa fa-lock"></i> Login</a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
-				<!-- Responsive Menu Structure-->
-				<!--Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
-				<ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
-					 <li>
-						<a href="/" class="active">
-							<span class="title">Home</span>
-						</a>
-					</li>
-					 <li>
-						<a href="/about">
-							<span class="title">About Us</span>
-						</a>
-					</li>
-					 <li>
-						<a href="/services">
-							<span class="title">Services</span>
-						</a>
-					</li>
-					 <li>
-						<a href="/products">
-							<span class="title">Products</span>
-						</a>
-					</li>
-					<li class="last ">
-						<a href="/contact">
-							<span class="title">Contact Us</span>
-						</a>
-					</li>
-				</ul>
-				</nav>
+			</div>
+		</div><!--/header-middle-->
+	
+		<div class="header-bottom"><!--header-bottom-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li><a href="/" class="active">Home</a></li>
+								{{-- <li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="shop.html">Products</a></li>
+										<li><a href="product-details.html">Product Details</a></li> 
+										<li><a href="checkout.html">Checkout</a></li> 
+										<li><a href="cart.html">Cart</a></li> 
+										<li><a href="login.html">Login</a></li> 
+                                    </ul>
+                                </li> 
+								<li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="blog.html">Blog List</a></li>
+										<li><a href="blog-single.html">Blog Single</a></li>
+                                    </ul>
+                                </li>  --}}
+								{{-- <li><a href="404.html">404</a></li> --}}
+								<li><a href="{{ route('contact') }}">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="search_box pull-right">
+							<input type="text" placeholder="Search"/>
+						</div>
+					</div>
 				</div>
-    </header>
-      <!-- End Navbar -->
-      @yield('content')
-    <!-- End Header -->
+			</div>
+		</div><!--/header-bottom-->
+	</header><!--/header-->
 
-    <!-- Footer -->
-<footer class="wt-section bg-dark main-footer">
-<div class="container">
-<div class="row">
-<div class=" col-sm-4 col-md col-sm-4 col-12 col mb-4">
-<h5 class="mb-4">Reach us</h5>
+	@yield('content')
+	
+	<footer id="footer"><!--Footer-->
+		{{-- <div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="companyinfo">
+							<h2><span>e4m</span>-Suppliers</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor</p>
+						</div>
+					</div>
+					<div class="col-sm-7">
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="/images/home/iframe1.png" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>Circle of Hands</p>
+								<h2>24 DEC 2014</h2>
+							</div>
+						</div>
+						
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="/images/home/iframe2.png" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>Circle of Hands</p>
+								<h2>24 DEC 2014</h2>
+							</div>
+						</div>
+						
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="/images/home/iframe3.png" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>Circle of Hands</p>
+								<h2>24 DEC 2014</h2>
+							</div>
+						</div>
+						
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="/images/home/iframe4.png" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>Circle of Hands</p>
+								<h2>24 DEC 2014</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="address">
+							<img src="/images/home/map.png" alt="" />
+							<p>505 Southern House, Nairobi Kenya</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> --}}
+		
+		<div class="footer-widget">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Service</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">Online Help</a></li>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">Order Status</a></li>
+								<li><a href="#">Change Location</a></li>
+								<li><a href="#">FAQ’s</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Quock Shop</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">Electronics</a></li>
+								<li><a href="#">Kitchenware</a></li>
+								<li><a href="#">Utensils</a></li>
+								<li><a href="#">Blenders</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Policies</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">Terms of Use</a></li>
+								<li><a href="#">Privecy Policy</a></li>
+								<li><a href="#">Refund Policy</a></li>
+								<li><a href="#">Billing System</a></li>
+								<li><a href="#">Ticket System</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>About E4M suppliers</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">Company Information</a></li>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Store Location</a></li>
+								<li><a href="#">Affillate Program</a></li>
+								<li><a href="#">Copyright</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-sm-offset-1">
+						<div class="single-widget">
+							<h2>About E4M Suppliers</h2>
+							<form action="#" class="searchform">
+								<input type="text" placeholder="Your email address" />
+								<button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
+								<p>Get the most recent updates from <br />our site and be updated your self...</p>
+							</form>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p class="pull-left">Copyright © {{ date('Y') }} E4M Ltd. All rights reserved.</p>
+					<p class="pull-right">Designed by <span><a target="_blank" href="https://api.whatsapp.com/send?phone=254723831989">Mufasa Labs</a></span></p>
+				</div>
+			</div>
+		</div>
+		
+	</footer><!--/Footer-->
+	
 
-<p><i class="fa fa-location-arrow mr-2"></i> #Tom Mboya street, Nairobi </p>
-<p><i class="fa fa-phone mr-2"></i>  +254792-938-363  </p>
-<p><i class="fa fa fa-envelope mr-2"></i> info@e4missions.com  </p>
-
-
-</div>
-
-
-<div class="col-sm-4 col-md  col-6 col mb-4">
-<h5 class="mb-4">Site links</h5>
-
-<ul class="list-inline">
-<li class="list-block-item mx-2"><a href="#">Home</a></li>
-<li class="list-block-item mx-2"><a href="#">About Us</a></li>
-<li class="list-block-item mx-2"><a href="#">Services</a></li>
-<li class="list-block-item mx-2"><a href="#">Portfolio</a></li>
-<li class="list-block-item mx-2"><a href="#">Pricing</a></li>
-</ul>
-
-</div>
-
-
-<div class="col-sm-4 col-md  col-6 col mb-4">
-<h5 class="mb-4">Quick links</h5>
-
-<ul class="list-inline">
-<li class="list-block-item mx-2"><a href="#">Blog</a></li>
-<li class="list-block-item mx-2"><a href="#">Contact Us</a></li>
-<li class="list-block-item mx-2"><a href="#">Privacy Policy</a></li>
-<li class="list-block-item mx-2"><a href="http://webthemez.com">Terms & Conditions</a></li>
-</ul>
-
-</div>
-
-
-<div class="col-sm-4 col-md  col-12 col mb-4">
-<h5 class="mb-4">Follow us</h5>
-<ul class="social_footer_ul list-inline text-left mb-0">
-<li class="list-inline-item mx-2"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-<li class="list-inline-item mx-2"><a href="#"><i class="fab fa-twitter"></i></a></li>
-<li class="list-inline-item mx-2"><a href="#"><i class="fab fa-linkedin"></i></a></li>
-<li class="list-inline-item mx-2"><a href="#"><i class="fab fa-instagram"></i></a></li>
-</ul>
-</div>
-</div>
-<div class="row">
-<div class="col-md-12 pt-4">
-
-<p class="text-center copyrights"><a class="text-white" href="https://wa.me/254723831989">Designed by</a> Mufasa labs <br>© All Rights Reserved</p>
-</div>
-</div>
-</div>
-</footer>
-    <!-- End Footer -->
-
-    <!-- JS Script Files -->
-    <!-- Global Vendor -->
-    <script src="{{ asset('vendors/jquery.min.js') }}"></script>
-    <script src="{{ asset('vendors/jquery.migrate.min.js') }}"></script>
-    <script src="{{ asset('vendors/popper.min.js') }}"></script>
-    <script src="{{ asset('vendors/bootstrap/js/bootstrap.min.js') }}"></script>
-	<script src="{{ asset('vendors/aos/aos.js') }}"></script>
-
-    <!-- Components Vendor  -->
-    <script src="{{ asset('vendors/slick-carousel/slick.min.js') }}"></script>
-	   <script src="{{ asset('vendors/ace-responsive-menu/ace-responsive-menu.js') }}"></script>
-
-    <!--Plugin Initialize-->
-    <script src="{{ asset('js/global.js') }}"></script>
-    <script src="{{ asset('vendors/carousel.js') }}"></script>
-
-	<!-- END JAVASCRIPTS -->
+  
+    <script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/jquery.scrollUp.min.js"></script>
+	<script src="/js/price-range.js"></script>
+    <script src="/js/jquery.prettyPhoto.js"></script>
+	<script src="/js/main.js"></script>
 	@stack('scripts')
-  </body>
+</body>
 </html>

@@ -13,22 +13,80 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
+Route::get('/{category?}',[
+    'uses' => 'HomeController@index',
+    'as' => 'index'
+]);
+
+Route::any('/auth/login',[
+    'uses' => 'HomeController@login',
+    'as' => 'login'
+]);
+
+Route::any('/auth/logout',[
+    'uses' => 'HomeController@logout',
+    'as' => 'logout'
+]);
+
+Route::any('/auth/register',[
+    'uses' => 'HomeController@register',
+    'as' => 'register'
+]);
+
+Route::group(['prefix' => 'shop',], function () {
+    Route::get('/services', function () {
+        return view('services');
+    });
+
+    Route::get('/about', function () {
+        return view('about');
+    });
+
+    Route::any('/contact',[
+        'uses' => 'HomeController@contact',
+        'as' => 'contact'
+    ]);
+
+    Route::get('/products', function () {
+        return view('products');
+    });
+
 });
 
-Route::get('/services', function () {
-    return view('services');
-});
+Route::group(['prefix' => 'admin','middleware' => 'auth'], function () {
 
-Route::get('/about', function () {
-    return view('about');
-});
+    Route::get('/home', [
+        'uses' => 'AdminController@admin_home',
+        'as' => 'admin.home',
+    ]);
 
-Route::get('/contact', function () {
-    return view('contact');
-});
+    Route::get('/product_categories', [
+        'uses' => 'ProductSetup@categories',
+        'as' => 'product_categories',
+    ]);
 
-Route::get('/products', function () {
-    return view('products');
+    Route::post('/new_update_categories',[
+        'uses' => 'ProductSetup@new_update_categories',
+        'as' => 'new_update_categories'
+    ]);
+
+    Route::get('/products_mgt',[
+        'uses' => 'ProductSetup@products_mgt',
+        'as' => 'products_mgt'
+    ]);
+
+    Route::post('/new_products',[
+        'uses' => 'ProductSetup@new_products',
+        'as' => 'new_products'
+    ]);
+
+    Route::any('/users',[
+        'uses' => 'AdminController@users',
+        'as' => 'users'
+    ]);
+
+    Route::any('/new_update_users',[
+        'uses' => 'AdminController@new_update_users',
+        'as' => 'new_update_users'
+    ]);
 });
