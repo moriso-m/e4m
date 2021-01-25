@@ -59,16 +59,16 @@
                         <!-- Logo icon image, you can use font-icon also -->
                         <b>
                             <!--This is dark logo icon-->
-                            <img src="{{ asset('admin/plugins/images/admin-logo.png" alt="home" class="dark-logo" />
+                            <img src="{{ asset('admin/plugins/images/admin-logo.png') }}" alt="home" class="dark-logo" />
                             <!--This is light logo icon-->
-                            <img src="{{ asset('admin/plugins/images/admin-logo-dark.png" alt="home" class="light-logo" />
+                            <img src="{{ asset('admin/plugins/images/admin-logo-dark.png') }}" alt="home" class="light-logo" />
                         </b>
                         <!-- Logo text image you can use text also -->
                         <span class="hidden-xs">
                             <!--This is dark logo text-->
-                            <img src="{{ asset('admin/plugins/images/admin-text.png" alt="home" class="dark-logo" />
+                            <img src="{{ asset('admin/plugins/images/admin-text.png') }}" alt="home" class="dark-logo" />
                             <!--This is light logo text-->
-                            <img src="{{ asset('admin/plugins/images/admin-text-dark.png" alt="home" class="light-logo" />
+                            <img src="{{ asset('admin/plugins/images/admin-text-dark.png') }}" alt="home" class="light-logo" />
                         </span> 
                     </a>
                 </div>
@@ -86,7 +86,7 @@
                         </form>
                     </li>
                     <li>
-                        <a class="profile-pic" href="#"> <img src="{{ asset('admin/plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">{{ Auth::user()->name }}</b></a>
+                        <a class="profile-pic" href="#"> <img src="{{ asset('admin/plugins/images/users/varun.jpg') }}" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">{{ Auth::user()->name }}</b></a>
                     </li>
                 </ul>
             </div>
