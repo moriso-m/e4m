@@ -31,7 +31,7 @@
                         <div class="product-image-wrapper">
                             <div class="single-products">
                                 <div class="productinfo text-center">
-                                    <img src="/images/shop/product11.jpg" alt="" />
+                                    <img src="{{ $product->image }}" alt="{{ $product->product_name }}" style="height: 50vh;"/>
                                     <h2>Ksh. {{ $product->selling_price }}</h2>
                                     <p>{{ $product->product_name }}</p>
                                     <a href="#" class="btn btn-default add-to-cart">

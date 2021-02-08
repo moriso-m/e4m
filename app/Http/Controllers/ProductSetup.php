@@ -59,11 +59,25 @@ class ProductSetup extends Controller
         $image = $request->file('product_image');
         $file_path = $image->storeAs('public/files/product_images',$product_id);
         $public_path = Storage::url($file_path);
+        
+        if($request->hasFile('product_image')) {
+            $image = $request->file('product_image');
+
+            $image_name = $product_id .'.'. $image->getClientOriginalExtension();
+            $thumb_name = $product_id .'-tb.'. $image->getClientOriginalExtension();
+            $destinationPath = public_path().DIRECTORY_SEPARATOR.'product_images';
+            
+            $image->move($destinationPath, $image_name);
+            $orgImgPath = $destinationPath. DIRECTORY_SEPARATOR.$image_name;
+            $dbPath = '/product_images/'.$image_name;
+            $thumbPath = $destinationPath. DIRECTORY_SEPARATOR.$thumb_name;
+            shell_exec("convert $orgImgPath -resize 200x200\! $thumbPath");
+        }
 
         $product = new Product;
         $product->product_name = $request->product_name;
         $product->product_category = $request->product_category;
-        $product->image = $public_path;
+        $product->image = $dbPath;
         $product->initial_price = $request->initial_price;
         $product->selling_price = $request->selling_price;
 
