@@ -71,7 +71,7 @@ class ProductSetup extends Controller
             $orgImgPath = $destinationPath. DIRECTORY_SEPARATOR.$image_name;
             $dbPath = '/product_images/'.$image_name;
             $thumbPath = $destinationPath. DIRECTORY_SEPARATOR.$thumb_name;
-            shell_exec("convert $orgImgPath -resize 200x200\! $thumbPath");
+            // shell_exec("convert $orgImgPath -resize 200x200\! $thumbPath");
         }
 
         $product = new Product;
