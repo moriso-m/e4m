@@ -47,10 +47,14 @@
 											</span>
 										</h2>
                                         <p>{{ $product->product_name }}</p>
-                                        <a href="#" class="btn btn-default add-to-cart">
-                                            <i class="fa fa-shopping-cart"></i>
-                                            Contact
-                                        </a>
+                                        <p class="btn btn-default add-to-cart contact" data-id="{{ $product->product_id }}">
+                                            <i class="fa fa-phone"></i>
+                                            Contact <br> 
+											<span style="color:#333">Mobile: 
+												<a href="tel:0208000774">0208000774</a>, 
+												<a href="tel:0792938363">0792938363</a>, 
+											</span>
+                                        </p>
                                     </div>
                                 </div>
 							</div>
@@ -77,3 +81,13 @@
 	</div>
 </section>
 @endsection
+
+@push('scripts')
+	<script>
+		$('.contact').click(function (e) { 
+			var id = $(this).data('id');
+			console.log(id);
+			$('#contact_details_'.id).show();
+		});
+	</script>
+@endpush
