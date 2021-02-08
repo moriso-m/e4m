@@ -29,7 +29,7 @@
                         <div class="product-image-wrapper">
                             <div class="single-products">
                                 <div class="productinfo text-center">
-                                    <img src="{{ url($product->image) }}" alt="{{ $product->product_name }}" style="height: 50vh;"/>
+                                    <img src="{{ $product->image }}" alt="{{ $product->product_name }}" style="height: 50vh;"/>
 									<p style="font-size: 1.66em;font-weight: 400;">{{ $product->product_name }}</p>
 									<b>Ksh. {{ $product->selling_price }}</b>
 									@if(isset($product->initial_price))
